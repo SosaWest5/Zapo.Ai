@@ -1,0 +1,43 @@
+name: Build Zapo Windows VST3
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-vst3:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Test bridge and assets
+        run: python -m unittest discover -s tests -v
+
+      - name: Configure
+        run: cmake -S . -B build -A x64
+
+      - name: Compile VST3
+        run: cmake --build build --config Release --target ZapoAI_VST3 CaptureTests --parallel 2
+
+      - name: Test audio capture
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Stage installation files
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force package
+          Copy-Item -Recurse 'build/ZapoAI_artefacts/Release/VST3/ZapoAI.vst3' package/
+          Copy-Item -Recurse bridge package/
+          Copy-Item README.md package/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Zapo-Ai-Windows-VST3
+          path: package/
+          if-no-files-found: error
