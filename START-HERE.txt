@@ -1,0 +1,15 @@
+Zapo.Ai source package — start here
+
+1. Extract this ZIP on your Windows PC.
+2. Create a GitHub repository called zapo-ai.
+3. Upload everything INSIDE the zapo-ai folder, including the hidden .github folder.
+4. GitHub > Actions > Build Zapo Windows VST3 > completed run > Artifacts.
+5. Download Zapo-Ai-Windows-VST3 and extract it.
+6. Copy the whole ZapoAI.vst3 folder to C:\Program Files\Common Files\VST3.
+7. Set up the API key and run bridge/start-windows.bat as described in README.md.
+8. FL Studio > Options > Manage plugins > Find installed plugins.
+9. Add ZapoAI to the Master mixer, play a beat, and click Listen to Beat.
+
+This ZIP contains source code. GitHub Actions builds the Windows plugin.
+The interface says Zapo.Ai. The plugin file is ZapoAI.vst3.
+AI replies require internet, your own API key and separately billed API usage.

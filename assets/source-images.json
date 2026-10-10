@@ -1,0 +1,50 @@
+[
+  {
+    "mood": "scared",
+    "original_upload": "IMG_6962(4).jpeg",
+    "file": "scared.jpg",
+    "sha256": "c1fee921e8d1b42e3639a9b8d4db2701d7dc5668e333991c6f4ace1a6705a06f"
+  },
+  {
+    "mood": "disgusted",
+    "original_upload": "442B9008-3F47-47E7-A967-FFF67A290552(3).jpeg",
+    "file": "disgusted.jpg",
+    "sha256": "f0ad59d9accb353accec401ca9ccd49c4dd7aa46367725659012791f5b0c2b98"
+  },
+  {
+    "mood": "feeling",
+    "original_upload": "65F5FD63-9B85-45A7-8CD9-4300715852B6(3).jpeg",
+    "file": "feeling.jpg",
+    "sha256": "0331059fccf5960fefa60cdd1296106da4ac1575176b2c8abc6d099c755ef9c7"
+  },
+  {
+    "mood": "coach",
+    "original_upload": "EAE56334-EA26-4DCB-83ED-EA0013DC0C38(3).jpeg",
+    "file": "coach.jpg",
+    "sha256": "1ed2c91b417a9d8598e0d8b5daf414a3b364da916b48c16695d7e7c5ed218f4b"
+  },
+  {
+    "mood": "unimpressed",
+    "original_upload": "A0AA20B8-E6D2-45A2-BA83-26E750D59195(3).jpeg",
+    "file": "unimpressed.jpg",
+    "sha256": "10623109ec0ec027224abf08140f4c83aac694d70a6aa0e7b007f17e8f172401"
+  },
+  {
+    "mood": "teacher",
+    "original_upload": "0075130F-CAF0-41F3-831C-9E6013A68E66(3).jpeg",
+    "file": "teacher.jpg",
+    "sha256": "d252fe1860ad9cee75cbef2d481d476e7f3f974a8c3e45a362cae49f5f459c9f"
+  },
+  {
+    "mood": "stank",
+    "original_upload": "B8F160E0-4968-4176-B5FF-83155DA2F291(3).jpeg",
+    "file": "stank.jpg",
+    "sha256": "d6d93dc8b85d4eabfcfaf4339366adce1175d446cb5870c157167c4dea358831"
+  },
+  {
+    "mood": "happy",
+    "original_upload": "62A0DF73-8D8E-482B-8C71-6ED5BEC755BF(3).jpeg",
+    "file": "happy.jpg",
+    "sha256": "5cb39b81030a17a82a2f4511704839197b33991073e5d0cfd7c760d7615dfefb"
+  }
+]
